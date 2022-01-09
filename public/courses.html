@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" style='font-size: 14px'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="courses.css" />
+
+</head>
+<style>
+    .playVideo,
+    .edit {
+        display: block;
+        margin-left: 66px;
+        margin-top: 12px;
+        color: #505d6b;
+        text-decoration: none;
+    }
+    
+    .edit:hover,
+    .playVideo:hover {
+        color: #ff4e4e;
+    }
+    
+    .content img {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <div data-app id="main">课程加载中,请稍后。。。</div>
+    <!-- <div id="goback"><a href="javascript:void(0)">返回课程列表</a></div> -->
+    <script src="./libraries/docsify.js"></script>
+    <script src="./libraries/jquery.min.js"></script>
+    <!-- <script src="./libraries/layer/layer.js"></script> -->
+    <!-- <script type="text/javascript" src="./libraries/shaka-player.compiled.js"></script> -->
+    <!-- <script src="./libraries/crypto-js.js"></script> -->
+    <script>
+        //shaka.net.NetworkingEngine.registerScheme('http', shaka.net.HttpPlugin, shaka.net.NetworkingEngine.PluginPriority.FALLBACK);
+        var videoPlayId = 0; //播放视频得ID 索引
+        //获取父页面的url地址打开md
+ 
+        var param = localStorage.getItem('mdUrl');
+        // var video_key = localStorage.getItem("videoKey");
+        //  var video_kid = localStorage.getItem("videoKid");
+        var basePath = param.lastIndexOf('/');
+        basePath = param.substring(0, basePath + 1);
+        window.$docsify = {
+            homepage: param,
+            el: "#main",
+            basePath: basePath,
+            loadSidebar: false,
+            plugins: [
+                // function (hook, vm) {
+                //     hook.ready(function () {
+                //         // 初始化并第一次加完成数据后调用，没有参数。
+                //         $('a').map((index, elem) => {
+                //             var href = $(elem).attr('href');
+                //             if (href.indexOf('.mpd') > -1 || href.indexOf('.mp4') > -1) {
+                //                 $(elem).attr('href', 'javascript:void(0)').addClass('playVideo').attr('data-src', href).prepend('<img class="playIcon" src="./images/play.png" />');
+                //                 $('.sidebar-nav').append(elem);
+                //             }
+                //             if (href.indexOf('.docx') > -1) {
+                //                 $(elem).attr('href', 'javascript:void(0)').addClass('edit').attr('data-src', href).prepend('<img class="playIcon" src="./images/edit.png" />');
+                //                 $('.sidebar-nav').append(elem);
+                //             }
+                //         })
+                //     })
+                // }
+            ]
+        };
+
+        let DOMHeight = document.body.scrollHeight //可视区域高度
+        window.onscroll = function () {
+            let pageHeight = document.body.scrollHeight //页面总高度
+            let windowTop = document.documentElement.scrollTop; //浏览器滚动高度
+            if (windowTop >= pageHeight - DOMHeight) {
+                localStorage.setItem('lessionStatus', '1');
+            }
+        }
+       // var goback = document.querySelector('#goback');
+
+        // $(document).on('click', '.playVideo', function () {
+        //     //播放视频
+        //     openVideoFile($(this).attr('data-src'))
+        // })
+        // $(document).on('click', '.edit', function () {
+        //     openEdit($(this).attr('data-src'))
+        // });
+
+       
+        // //打开视频
+        // function openVideoFile(src) {
+        //     src = src.replace('#/', '');
+        //     let title = $(this).attr('title');
+        //     videoPlayId++;
+        //     if (typeof window.parent.getCourseVideo !== 'function') {
+        //         layer.msg('播放错误，请关闭重试！');
+        //         return;
+        //     }
+        //     window.parent.getCourseVideo(src, videoPlayId, playVideo, (layero) => {
+        //         let videoID = $(layero).find('video').attr('data-id');
+        //         var player = new shaka.Player($(`#example-video${videoID}`)[0]);
+        //         player.destroy();
+        //     })
+
+        // }
+
+        // function playVideo(src, c) {
+        //     if (shaka.Player.isBrowserSupported()) {
+        //         // Everything looks good!
+        //         let index = param.lastIndexOf('/');
+        //         let newPath = param.substring(0, index + 1);
+        //         src = newPath + src;
+        //         var video = document.getElementById(`example-video${c}`);
+        //         var player = new shaka.Player(video);
+        //         player.configure({
+        //             drm: {
+        //                 clearKeys: {
+        //                     [video_kid]: video_key
+        //                 }
+        //             }
+        //         });
+        //         player.addEventListener('error', (event) => enevt.detail);
+        //         player.load(src).then(function () {
+        //             // 异步加载后运行
+        //             console.log('The video has now been loaded!');
+        //         }).catch((err) => err); // onError is executed if the asynchronous load fails.
+        //     } else {
+        //         // This browser does not have the minimum set of APIs we need.
+        //         console.error('Browser not supported!');
+        //     }
+        // }
+
+     
+    </script>
+</body>
+
+</html>

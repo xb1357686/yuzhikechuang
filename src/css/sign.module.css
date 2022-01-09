@@ -1,0 +1,53 @@
+/* 注册界面------------------------------------------------------------------------- */
+.signContent {	
+	margin: 50px auto;
+	max-width: 1100px;
+
+}
+
+.signLeft {
+	background: #314352;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.signContent img {
+	width: 100%;
+}
+.signRight {
+	background: #fff;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.signRightContent {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 64px 0 40px 0;
+}
+.signRightContent h3 {
+	font-weight: 900;
+}
+.signContent h3 {
+	font-weight: 500;
+	font-size:14px;
+	margin: 10px 0
+}
+.signContent input {
+	width: 100%;
+}
+.signContent button {
+	width: 50%;
+	margin: 50px auto;
+	display: block;
+}
+
+@media(max-width:768px){ 
+	.signRightContent {
+		padding: 0;
+	}
+	.signContent {
+		padding-top:0;
+	}
+}	

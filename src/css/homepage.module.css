@@ -1,0 +1,256 @@
+.content {
+    background-color: #f9f9f9;
+    padding-bottom: .2rem;
+}
+.content_bgc {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.content h3 {
+    text-align: center;
+}
+.content_courses {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/* 卡片BODY样式 */
+.productCard {
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+
+.homePage{
+	width: 84px;
+	margin-top: 18px;
+	color: #bfbfbf;
+    font-size: 14px;
+    border: 1px solid #bfbfbfad;
+    float:right;
+    text-align: center;
+    padding: 3px 5px;
+    border-radius: 5px
+}
+.homePage:hover{
+    background-color: #ffa93bcc;
+    color: #fff;
+    border: none
+}
+.homePage2{
+    display: inline-block;
+	height: 30px;
+	width: 7%;
+	margin-top: 18px;
+	text-align: center;
+	color: #bfbfbf;
+    font-size: 14px;
+    border: 1px solid #bfbfbfad;
+    float:right;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 5px
+}
+.homePage2:hover{
+    background-color: #21cfda;
+    color: #fff;
+    border: none
+}
+.courses_bgc {
+    cursor: pointer;
+    background-size: 100% !important;
+    background-color: #f7fbfc;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
+    transition: bottom .5s ease-out 0s;
+    bottom: 0px;
+    margin-top: .2rem;
+}
+
+.courses_imgBgc {
+    background-color: #e9fafe;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+.courses_imgBgc img{
+    width: 100%;
+    display: block;
+    margin:  0 auto;
+}
+.courses_title {
+    padding: 10px 10px 14px;
+    font-size: 14px;
+    background-color:#fff;
+    /* border-radius: 4px; */
+    text-align: center;
+}
+.productImg:hover{
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.productImg{
+    background-size:cover;
+    background-Color: #fff;
+    height: 100% ;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.toolCard img {
+    width: 1.4rem;
+}
+.moreBorder{
+    background-color: #fff7c0 ;
+    height: 100%;
+    box-Shadow: 0 7px 18px 0 #f2ebbd;
+}
+.moreButton{
+    font-size: .21rem;
+    width: .1rem;
+    display: inline-block;
+    color: #988531;
+    padding-left: 0.3rem;
+    padding-top: .2rem;
+    font-weight: lighter;   
+    border-radius: 2px;
+}
+.moreButton:hover{
+    color:#f8cc0c
+}
+
+.title{
+    margin-left: 10px;
+    font-Size: .22rem;
+    cursor: default
+}
+.toolCard{
+    border-radius:8px; 
+    background-Color: #fff7c0;
+    height: 1.6rem; 
+    margin-top: 10px;
+    box-Shadow: 0 7px 18px 0 #f2ebbd;
+}
+.toolName{
+    cursor:    default   ;
+    color:    #f8cc0c   ;
+    font-size:    .2rem   ;
+    font-weight:    800   
+}
+.startBtm{
+    border-radius: 10px ;
+    cursor:    pointer   ;
+    background-Color:    #ee7e18    ; 
+    border:    none    ; 
+    margin-top: 16px;
+    padding: 0.1rem 0.2rem;
+    color:    #fff    ; 
+}
+.control{
+    background-Color: #ffffff96;
+    opacity: 0.8; 
+    z-Index: 9 ;
+    width: 40px;
+    height: 273px;
+    border: none;
+    position: absolute
+}
+.control:hover{
+    background-Color: #fff
+}
+.control:focus{
+    border: none
+}
+.person{
+    display: inline;
+}
+.person:hover{
+    color:#1890ff;
+}
+.lastPage{
+    width: 20px;
+    border-radius: 50px;
+    position: relative
+}
+.nextPage{
+    width: 20px;
+    border-radius: 50px; 
+    position: relative
+}
+.productLine{
+    min-height: 300px;
+    margin-top: 10px; 
+    position:relative
+}
+
+.butStl{
+    margin-left: 5px;
+    display: inline
+}
+.browse{
+    float: right;
+    padding-left: 0 !important;
+    padding-right:0 !important
+}
+.proInformation{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%
+}
+.homePageBanner{
+     width: 100%; 
+     margin-top:5px;
+     border-radius:5px
+}
+.cardUserName{
+    color: #fff;
+    padding-Left: 7%;
+    padding-Top: 2%;
+    padding-Bottom: 3%
+}
+.cardFavor{
+    color: #fff;
+    position:absolute;
+    right:35px
+}
+.cardLaud{
+    color: #fff;
+    position:absolute;
+    left:85px
+}
+.cardBrowse{
+    color: #fff; 
+    padding-Left: 7%; 
+    padding-Top: 2%
+}
+.cardName{
+    color: #fff;
+    padding-Left: .12rem;
+    font-Size: .19rem;
+    padding-Top: .07rem;
+}
+.cardDiv{
+    width: 100%;
+    height: 272px;
+    cursor: pointer
+}
+
+@media(max-width:540px){ 
+
+    .toolCard{
+      padding-top: 12px;
+    }
+    .moreButton{
+        font-size: .3rem;
+        width: 100%;
+        padding-top: .3rem;
+        text-align: center;
+    }
+ } 
+
+ /* 最小尺寸 */
+ @media(max-width:576px){ 
+    .control {
+        display: none !important;
+    }
+ } 

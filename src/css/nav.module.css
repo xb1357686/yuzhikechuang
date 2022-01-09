@@ -1,0 +1,168 @@
+/* nav.jsx 样式-------------------------------------------------------------- */
+
+.menuList {
+  text-align: center;
+  background: #032951;
+  height    : 64px;
+}
+
+.menuList .menu {
+  font-size  : 16px;
+  font-weight: 800;
+  color      : #fff;
+  cursor     : pointer;
+}
+
+.menuList .menu a {
+  color: #fff;
+}
+
+.menuList .commu {
+  font-size  : 20px;
+  font-weight: 800;
+  color      : orange;
+  cursor     : pointer;
+}
+
+.menuList .commu img {
+  height: 60px;
+}
+
+.navCenter {
+  padding: 0 10px;
+  margin : 0 auto;
+}
+
+.homePage {
+  height       : 64px;
+  padding-top  : 20px;
+  text-align   : center;
+  color        : #fff;
+  font-size    : 16px;
+  text-emphasis: none;
+}
+
+.homePage:hover {
+  background-color: #11406c
+}
+
+
+.menuCourses {
+  height    : 44px;
+  width     : 44px;
+  background: url('../images/img_step.png') 0px 0px;
+  margin-top: 8px;
+}
+
+.menuSoftware {
+  width      : 38px;
+  height     : 44px;
+  background : url('../images/img_step.png') -45px 0px;
+  margin-top : 8px;
+  margin-left: 4px;
+}
+
+.menuCommunity {
+  width     : 40px;
+  height    : 44px;
+  background: url('../images/img_step.png') -82px 0px;
+  margin-top: 8px;
+}
+
+.goback {
+  background: #4f4f4f;
+  width     : 50%;
+  height    : 100%;
+  float     : left;
+}
+
+.goback h1 {
+  color     : #fff;
+  text-align: center;
+}
+
+.logining {
+  height     : 64px;
+  padding-top: 20px;
+  text-align : center
+}
+
+.signin {
+  height     : 64px;
+  padding-top: 20px;
+  text-align : center
+}
+
+/* 登陆样式 */
+
+.login {
+  background: #fff;
+  width     : 50%;
+  height    : 100%;
+  float     : left;
+}
+
+.loginResult {
+  background: #fff;
+  width     : 80%;
+  height    : 100%;
+  margin    : 0 auto;
+  padding   : 40px 0;
+}
+
+.logined {
+  color      : #fff;
+  padding-top: 14px;
+  cursor     : pointer;
+}
+
+.logined .userName {
+  color     : #fff;
+  display   : block;
+  margin-top: 4px;
+  font-size : 16px;
+  width     : 100px;
+  height    : 24px;
+  overflow  : hidden;
+}
+
+.logined .exit {
+  color      : #fff;
+  margin-left: 10px;
+  font-size  : 14px;
+  float      : right;
+  cursor     : pointer;
+}
+
+.collapse {
+  margin: 10px auto;
+}
+
+/* logo样式 */
+
+.logo {
+  padding: 4px 0;
+}
+
+.logo img {
+  height: 58px;
+}
+
+/* 小屏幕下dropdown 按钮的样式 */
+.dropdownBtn {
+  width           : 30px;
+  height          : 30px;
+  background-color: #fff;
+  border-radius   : 6px;
+  color           : #000;
+  margin-top      : 16px;
+  padding-top     : 2px;
+}
+
+
+@media(max-width:576px) {
+  .loginResult {
+    padding: 0;
+  }
+
+}

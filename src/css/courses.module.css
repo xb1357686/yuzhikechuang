@@ -1,0 +1,365 @@
+.content {
+    background-color:#f9f9f9;
+    /* background: url(../images/content_bgc.png);
+    background-repeat: repeat-y;
+    background-size: 100%; */
+}
+.content_bgc {
+    min-height: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.content h3 {
+    text-align: center;
+}
+.content_courses {
+    max-width:1200px;
+    margin:0 auto;
+}
+.courses_bgc {
+    cursor: pointer;
+    background-size: 100% !important;
+    margin: 30px 0;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
+    transition: bottom .5s ease-out 0s;
+    bottom: 0px
+}
+
+.courses_bgc:hover{
+     position: relative;
+     bottom: 10px;
+}
+.courses_imgBgc {
+    background-color: #ffffff;
+    height: 155px;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+}
+.courses_imgBgc img{
+    height: 100%;
+    display: block;
+    margin:  0 auto;
+}
+.courses_title {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color:#545454;
+    padding: 10px 10px 14px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+.courses_bgc h3 {
+    transition: all 0.5s;
+}
+
+.courses_bgc:hover h3 {
+    color: #e04343
+}
+.callbackBtn{
+    cursor: pointer;
+}
+
+/* 课时列表 */
+.coursesList {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.coursesList:hover {
+    background-color: #dcdcdc;
+
+}
+.coursesList:hover p{
+    color: #e04343;
+}
+
+.Appcard {
+    text-align: center;
+    background: transparent;
+    color:#fff;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.Appcard:hover {
+    box-shadow: 0 8px 16px 0 grey;
+    cursor: pointer;
+    /* border: 1px solid rgba(255,255,255,0.4); */
+}
+.list {
+    transition: all .3s inherit;
+    padding: 10px ;
+    cursor: pointer;
+}
+.list:hover {
+    color: rgb(225, 105, 19);
+    background-color: #eee;
+}
+.control {
+    font-size:30px;
+    color: #a4a5a6
+}
+.control:hover{
+    color: #fff
+}
+/* 卡片BODY样式 */
+.productCard {
+    margin-bottom: 40px;
+    position: relative;
+}
+.productImg:hover{
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.productImg{
+    width: 100%; 
+    height: 100% ;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.pagecss {
+    display: block;
+    width: 70%;
+    bottom: 20px;
+    left: 15%;
+    position: absolute;
+}
+.person{
+    display: inline;
+}
+.person:hover{
+    color:#1890ff;
+    cursor: pointer;
+}
+.excellent{
+    border: none;
+    width:44%;
+    text-align: center;
+    background-Color:#fff0 ;
+    box-shadow: none;
+}
+.excellent:focus{
+    background-Color:#fff0 !important;
+}
+.excellent:hover{
+    background-Color:#fff0 !important;
+}
+.newProduct:focus{
+    background-Color:#fff0 !important;
+}
+.newProduct:hover{
+    background-Color:#fff0 !important;
+}
+.newProduct{
+    border: none;
+    width:44%;
+    text-align: center;
+    background-color:#fff0;
+    box-shadow: none;
+}
+.notFoundImg{
+     margin-top: 40px;
+    width: 500px;
+}
+.turnApp{
+      background-color: #ff8975 !important;;
+      color: #fff;  
+      border: #ff8975;
+      right: 204px;
+      top: 75px;
+}
+.turnApp:hover{
+    background-color: #ff5234 !important;
+    color: #fff;  
+    border: #ff5234;
+}
+.start{
+    border-radius: 24px;
+    background-color:  #f20d0d;
+    color:#fff;
+    height: 40px
+}
+.start:hover{
+    background-color:  #c20a0a;
+}
+
+/* 悬浮视频播放 */
+.suspendBtn {
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    position: fixed;
+    top: 72px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    right:20px;
+    line-height: 0;
+    font-size: 46px;
+    color: #2e92e8;
+    cursor: pointer;
+    z-index: 999999999999
+}
+.cancelBtn {
+    color: #f53636;
+    font-size: 16px;
+    position: absolute;
+    right: -16px;
+    top: -8px;
+    display: none;
+    
+}
+.suspendBtn:hover .cancelBtn{
+    display: block;
+}
+
+/* IFRAme 课程滚动 */
+.scrollWrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    /* 提示: 请在此处加上需要设置的大小(dimensions)或位置(positioning)信息! */
+  }
+.scrollWrapper iframe {
+    /* 你自己指定的样式 */
+  }
+
+
+.courseMD {
+    width:103%;
+    height:100%;
+    padding:0 40px 0 20px;
+    color: #34495e;
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+.courseMD img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.courseMD p {
+    line-height: .25rem;
+    word-spacing: .05rem;
+    margin: .5em 0;
+}
+.courseMD table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    margin-bottom: 1rem;
+    overflow: auto;
+    width: 100%;
+    border-color: grey;
+}
+.courseMD thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.courseMD tr {
+    border-top: 1px solid #ccc;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.courseMD th,.courseMD td {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
+.courseMD th {
+    font-weight: 700;
+}
+.courseMD strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+.task{
+    height:66px;
+    font-weight:700;
+    text-align:center;
+    padding-top:22px;
+    cursor: pointer;   
+    font-size:16px;
+    border-bottom:3px solid #fff;
+}
+.task:hover{
+   color:#f20d0d
+}
+.taskButton{
+    background: url(../images/doit.png);
+    height: 30px;
+    padding-top: 4px;
+}
+
+@media(max-width:414px){ 
+    .courseMD p {
+        line-height: .4rem;
+    }
+
+}  /*i6Plus,i7Plus宽度*/  
+.taskMD {
+    width:103%;
+    padding:0 10px 0 5px;
+    color: #34495e;
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+.taskMD img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.taskMD p {
+    line-height: .25rem;
+    word-spacing: .05rem;
+    margin: .5em 0;
+}
+.taskMD table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    margin-bottom: 1rem;
+    overflow: auto;
+    width: 100%;
+    border-color: grey;
+}
+.taskMD thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.taskMD tr {
+    border-top: 1px solid #ccc;
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.taskMD th,.taskMD td {
+    border: 1px solid #ddd;
+    padding: 6px 13px;
+}
+.taskMD th {
+    font-weight: 700;
+}
+.taskMD strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+.taskMDDiv{
+    overflow:hidden;
+    margin-top: 10px
+}
+@media(max-width:414px){ 
+    .taskMD p {
+        line-height: .4rem;
+    }
+
+}  /*i6Plus,i7Plus宽度*/  

@@ -1,0 +1,337 @@
+.userInfoMenu {
+    height: 265px;
+    background-size: cover;
+    background: url('../images/mebgc.jpg') no-repeat;
+    position: relative;
+}
+
+.Avatar {
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userName {
+    color: white;
+    font-size: 22px;
+}
+
+.editBtn {
+    padding: 10px 0;
+    line-height: 60px;
+}
+
+.pwChan {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.listBar {
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    padding:  10px;
+    border: #fff 3px solid;
+}
+
+.listBar img {
+    display: block;
+    margin: 0 auto;
+}
+.sign{
+    width: 20px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+.sign img {
+    display: block;
+    margin: 0 auto;
+}
+.classCSS {
+    padding: 8px 0;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #3DB389;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.setSpanData {
+    position: absolute;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    background: url(../images/install.png) no-repeat 0 0;
+    cursor: pointer;
+}
+
+.setSpanPass {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/install.png) no-repeat -60px 0;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.classTitle {
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+.centerBtn {
+    margin: 0 auto;
+    display: block;
+}
+
+.centerInput {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+.person{
+    display: inline;
+}
+.person:hover{
+    color:#1890ff;
+    cursor: pointer;
+}
+.adminBtn {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+.headimg {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+.headbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.info p span {
+    width: 20%;
+    display: inline-block;
+}
+
+
+/* 消息列表 */
+
+.pagecss {
+    display: block;
+    width: 70%;
+    bottom: 20px;
+    left: 15%;
+    position: absolute;
+}
+
+.news h1 {
+    font-size: 30px;
+    color: #1DA57A;
+    text-align: center;
+    font-weight: bold;
+}
+
+.news p {
+    font-size: 18px;
+    text-indent: 2em;
+}
+
+.news p:first-letter {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1DA57A;
+}
+
+
+/* 勋章列表 */
+
+.medalcss {
+    width: 30%;
+    margin: 10px 1%;
+    text-align: center;
+    float: left;
+}
+
+.medalcss h3 {
+    color: gray;
+    font-weight: bold;
+}
+
+.medalcss .isGet {
+    width: 50%;
+}
+
+.medalcss .noGet {
+    width: 50%;
+    -webkit-filter: grayscale(100%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+
+/* 排行榜 */
+
+.rankul,
+.rankulBottom {
+    list-style: none;
+}
+
+.rankul li img,
+.rankulBottom li img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.rankulBottom li span:nth-of-type(3) {
+    color: gray;
+    font-size: 14px;
+    float: right;
+    
+}
+
+.rankulBottom li span:nth-of-type(2) {
+    color: #1DA57A;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.rankul li:nth-of-type(1) {
+    text-align: center;
+    width: 100%;
+}
+
+.rankul li:nth-of-type(1) span:nth-of-type(1) {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: red;
+    width: 100%;
+}
+.productImg:hover{
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.productImg{
+    width: 100%; 
+    height: 100% ;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.rankul li:nth-of-type(1) span:nth-of-type(2) {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.rankul li:nth-of-type(1) img {
+    width: 20%;
+}
+
+.rankul li:nth-of-type(2),
+.rankul li:nth-of-type(3) {
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+.rankul li:nth-of-type(2) span:nth-of-type(1),
+.rankul li:nth-of-type(3) span:nth-of-type(1) {
+    text-align: center;
+    display: block;
+    color: red;
+    width: 100%;
+}
+
+.rankul li:nth-of-type(2) span:nth-of-type(2),
+.rankul li:nth-of-type(3) span:nth-of-type(2) {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.rankul li:nth-of-type(2) img,
+.rankul li:nth-of-type(3) img {
+    width: 30%;
+}
+
+
+/* 系统信息 */
+
+.systitle {
+    color: gray;
+    font-weight: bold;
+}
+
+.reload {
+    width: 97px;
+    height: 44px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background: #1da57a;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* 个人作品 */
+
+.closeBtn {
+    position: absolute;
+    top: 6px;
+    right: 14px;
+    font-size: 16px;
+    color: #ff872c;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.closeBtn:hover {
+    color: red;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* 触发 hasLayout */
+    zoom: 1;
+}
+.notFoundImg{
+    margin-top: 40px;
+   width: 500px;
+}
+.turnApp{
+     background-color: #ff8975 !important;
+     color: #fff;  
+     border: #ff8975;
+     right: 300px;
+     top: 160px;
+}
+.turnApp:hover{
+   background-color: #ff5234 !important;
+   color: #fff;  
+   border: #ff5234;
+}

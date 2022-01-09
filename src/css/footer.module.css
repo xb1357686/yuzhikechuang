@@ -1,0 +1,67 @@
+/* 底部样式----------------------------------------------------------------------------- */
+.footer {
+	background:#032951;
+	padding: 20px 0;
+	margin: 0;
+	color: #bbb;
+}
+.footer h3 {
+	color: #bbb;
+}
+
+.footer p {
+	font-size: 10px;
+	margin-bottom: 6px;
+}
+.weChatLogo {
+	width: 150px;
+	margin: 0 auto;
+}
+.weChatLogo img {
+	width: 100%;
+}
+.footer .copyright {
+	margin:0;
+	font-size: 10px;
+	cursor:default;
+	color:#666;
+}
+.label{
+	font-size: 10px;
+	color: #666
+}
+.point{
+	cursor:default;
+}
+.opinion{
+	cursor:pointer;
+	color: #bbb;
+}
+
+.oPosition{
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 88px;
+	cursor:pointer
+}
+.oPosition:hover{
+	color: #fff;
+}
+.opinion:hover{
+	color: #fff;
+}
+.label:hover{
+	color: #fff
+}
+
+@media(max-width:576px){ 
+	/*Android常用宽度*/
+	.footer {
+		text-align: center;
+	}
+	.twoCode {
+		margin-top: 10px;
+	}
+
+}

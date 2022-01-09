@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>育智科创</title>
+  <link rel="icon" type="image/icon" href="./favicon.ico">
+  <!-- <link rel="stylesheet" href="./libraries/layui/css/layui.css"> -->
+
+  <style>
+    html,
+    body {
+      background: '#ECECEC';
+      overflow-x: hidden;
+      font-size: 100px;
+    }
+
+    #root {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ant-radio-button-wrapper-checked {
+      background-color: #03b3b3 !important;
+      border: 1px solid #03b3b3 !important;
+      color: #fff !important;
+    }
+
+    .ant-radio {
+      position: absolute !important;
+      bottom: -5px;
+      left: 66px;
+    }
+
+    .ant-radio-wrapper {
+      margin: 12px !important;
+    }
+
+    .ant-tabs-ink-bar {
+      background-color: #1890ff !important;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: #1890ff !important;
+      font-weight: 500
+    }
+
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: #1890ff !important;
+    }
+
+    @media(max-width:540px) {
+      html {
+        font-size: 84.375px;
+      }
+    }
+
+    /*Android常用宽度*/
+    @media(max-width:480px) {
+      html {
+        font-size: 75px;
+      }
+    }
+
+    /*Android常用宽度*/
+    @media(max-width:414px) {
+      html {
+        font-size: 64.69px;
+      }
+    }
+
+    /*i6Plus,i7Plus宽度*/
+    @media(max-width:375px) {
+      html {
+        font-size: 58.59px;
+      }
+    }
+
+    /*i6,i7宽度*/
+    @media(max-width:360px) {
+      html {
+        font-size: 56.25px;
+      }
+    }
+
+    /*Android常用宽度*/
+  </style>
+
+
+</head>
+
+<body>
+
+  <div id="root"></div>
+  <script src="./libraries/layui/layui.js"></script>
+  <script>
+    //一般直接写在一个js文件中
+    layui.use(['layer', 'form'], function () {
+      let layer = layui.layer;
+    });
+  </script>
+</body>
+<script>
+    // let doc = document,
+    //     win = window,
+    //     recalc,resizeEvt,fontSizeRate;
+    // function initFontSize() {
+    //     console.log(win);
+    //     var docEl = doc.documentElement,
+    //         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    //         recalc = function () {
+    //             var clientWidth = docEl.clientWidth; //window.innerWidth;
+
+    //             if (!clientWidth) return;
+    //             fontSizeRate = (clientWidth / 375);
+    //             var baseFontSize = 15 * fontSizeRate;
+    //             docEl.style.fontSize = baseFontSize + 'px';
+    //         };
+
+    //     recalc();
+    //     if (!doc.addEventListener) return;
+    //     win.addEventListener(resizeEvt, recalc, false);
+    //     doc.addEventListener('DOMContentLoaded', recalc, false);
+    // };
+    // initFontSize();
+</script>
+
+</html>

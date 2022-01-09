@@ -1,0 +1,148 @@
+
+/* nav.jsx 样式-------------------------------------------------------------- */
+.menuList {
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	background: #314352;
+}
+.menuList .menu {
+	font-size: 16px;
+	font-weight: 800;
+	color: #fff;
+	cursor: pointer;
+}
+.menuList .menu a {
+	color: #fff;
+}
+.menuList .commu {
+	font-size: 20px;
+	font-weight: 800;
+	color: orange;
+	cursor: pointer;
+}
+.menuList .commu img {
+	height: 60px;
+}
+ .goback {
+	background: #314352;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+ .goback h1 {
+	color: #fff;
+	text-align: center; 
+}
+.logining {
+	font-size: 16px;
+	font-weight: 800;
+	color: #fff;
+	cursor: pointer;
+}
+.signin {
+	font-size: 16px;
+	font-weight: 800;
+	color: #fff;
+	cursor: pointer;
+}
+/* 登陆样式 */
+ .login {
+	background: #fff;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+ .loginResult {
+	background: #fff;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.logined {
+	color:#fff;
+	font-size:16px;
+}
+.logined.userName {
+	margin:0 15px;
+	text-align: center;
+	cursor:pointer;
+}
+.logined .exit {
+	color:#fff;
+	margin-left:10px;
+	font-size:14px;
+	float:right;
+	cursor:pointer;
+}
+
+
+/* 底部样式----------------------------------------------------------------------------- */
+.footer {
+	background:#314352;
+	margin: 0;
+}
+.footerTop {
+	padding-top: 20px;	
+}
+.weChatLogo {
+	width: 150px;
+	margin: 0 auto;
+}
+.weChatLogo img {
+	width: 100%;
+}
+.copyright {
+	text-align: center;
+	padding-bottom: 18px;
+	margin:0;
+}
+
+
+/* 注册界面------------------------------------------------------------------------- */
+.signContent {
+	margin: 50px auto;
+}
+.signContent .signMidden {
+	border: 1px solid gray;
+	height: 600px;
+}
+.signLeft {
+	background: #314352;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.signContent img {
+	width: 100%;
+}
+.signRight {
+	background: #fff;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.signRightContent {
+	background: #fff;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.signRightContent h3 {
+	font-weight: 900;
+}
+.signContent h3 {
+	font-weight: 500;
+	font-size:14px;
+	margin: 10px 0
+}
+.signContent input {
+	width: 100%;
+}
+.signContent button {
+	width: 50%;
+	margin: 50px auto;
+	display: block;
+}

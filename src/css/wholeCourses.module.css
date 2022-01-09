@@ -1,0 +1,13 @@
+.content img {
+    width: 100%;
+}
+.content h3 {
+    text-align: center;
+    padding-top: 8px;
+}
+.buyCoursesList :hover {
+   cursor: pointer;
+}
+.noCoursesList {
+    opacity: 0.5
+}
