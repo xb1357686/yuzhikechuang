@@ -1,5 +1,5 @@
 import apirequest from "./config/apirequest";
-const apiUrl = 'http://luokangtao.vip:8555'
+const apiUrl = 'https://luokangtao.vip/yzkc'
 const token = localStorage.getItem('userToken');
 
 export const selectPage = (parms) => {
