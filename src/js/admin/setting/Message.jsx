@@ -3,7 +3,7 @@ import BasicLayout from '../layouts/BasicLayout';
 import { message, Table, Button, Input, Modal, Icon, Divider, Select, Popconfirm, Radio, Row, Col, Tabs, Upload, Form } from 'antd';
 import { getSchool, putSchool, getParent, rgetegion } from '../../z_xu_api';
 
-const apiUrl = 'http://122.51.68.117:8555'
+const apiUrl = 'http://luokangtao.vip:8555'
 
 class Message extends React.Component {
   constructor(props) {
