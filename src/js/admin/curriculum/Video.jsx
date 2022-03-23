@@ -2,7 +2,7 @@ import React from 'react';
 import { message, Table, Button, Input, Modal, ConfigProvider, Icon, Select, Popconfirm, Radio, Row, Col, Tabs, Upload, Form } from 'antd';
 import { videoSelectPage, deleteVideo, addvVideo } from '../../z_xu_api';
 import zhCN from 'antd/es/locale-provider/zh_CN';  // 引入中文包
-const apiUrl = 'http://122.51.68.117:8555'
+const apiUrl = 'http://175.178.249.117/yzkc'
 
 class Video extends React.Component {
   constructor(props) {

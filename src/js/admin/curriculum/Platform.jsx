@@ -4,7 +4,7 @@ import { courseSelectPage, addCourse, putCourse, deleteStudent, classifysElectPa
 import zhCN from 'antd/es/locale-provider/zh_CN';  // 引入中文包
 import AddCourseModal from './addCourseModal';
 const { confirm } = Modal;
-const apiUrl = 'http://122.51.68.117:8555'
+const apiUrl = 'http://175.178.249.117/yzkc'
 
 class Platform extends React.Component {
   constructor(props) {

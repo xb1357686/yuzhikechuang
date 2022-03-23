@@ -245,8 +245,8 @@ class Nav extends React.Component {
 
       <div className={Styles.menuList} id="navBar">
         <Row style={{ margin: '0 auto', maxWidth: '1200px' }} className={Styles.navCenter}>
-          <Col md={{ span: 4 }} sm={{ span: 6 }} xs={{ span: 9 }} style={{ paddingTop: '11px' }}><img style={{ height: '42px', float: 'left' }} src={schoolInfo.schoolLogo || './images/LOGO4.png'} alt="maiyajia" /> <span style={{ fontSize: '24px', color: '#fff' }}>{schoolInfo.schoolName}</span></Col>
-          <Col xs={0} sm={18} md={20} lg={20} xl={20}>
+          <Col md={{ span: 6 }} sm={{ span: 6 }} xs={{ span: 9 }} style={{ paddingTop: '11px' }}><img style={{ height: '42px', float: 'left' }} src={schoolInfo.schoolLogo || './images/LOGO4.png'} alt="maiyajia" /> <span style={{ fontSize: '21px', color: '#fff',lineHeight:'40px' }}>{schoolInfo.schoolName}</span></Col>
+          <Col xs={0} sm={18} md={18} lg={18} xl={15}>
             <Col md={{ span: 2, offset: 1 }} xs={{ span: 3 }}><Link style={{ textDecoration: 'none', color: '#fff' }} to="/" title="首页"><div onClick={() => this.changeColor(1)} style={{ backgroundColor: this.state.color === 1 ? 'rgba(255,255,255,.1)' : '#032951' }} className={Styles.homePage}>首页</div></Link></Col>
             <Col md={{ span: 2 }} xs={{ span: 3 }}><Link style={{ textDecoration: 'none', color: '#fff' }} to="/courses" title="课程"><div onClick={() => this.changeColor(2)} style={{ backgroundColor: this.state.color === 2 ? 'rgba(255,255,255,.1)' : '#032951' }} className={Styles.homePage}>课程</div></Link></Col>
             <Col md={{ span: 2 }} xs={{ span: 3 }}><Link style={{ textDecoration: 'none', color: '#fff' }} to="/apptools" title="软件"><div onClick={() => this.changeColor(3)} style={{ backgroundColor: this.state.color === 3 ? 'rgba(255,255,255,.1)' : '#032951' }} className={Styles.homePage}>软件</div></Link></Col>

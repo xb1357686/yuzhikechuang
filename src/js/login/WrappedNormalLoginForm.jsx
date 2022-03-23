@@ -39,10 +39,11 @@ export default class NormalLoginForm extends React.Component {
           dispatch(gotoLogin(false));
         }
       } else {
-        Modal.error({ title: '登录失败', content: response.data.message });
         this.setState({ loading: false });
+        Modal.error({ title: '登录失败', content: response.data.message });
       }
     } catch (error) {
+      this.setState({ loading: false });
       console.log(error);
     }
   }

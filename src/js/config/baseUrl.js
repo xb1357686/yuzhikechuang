@@ -1,8 +1,8 @@
 
-export const baseUrl = `http://122.51.68.117:8555/`;
-export const apiUrl = 'http://122.51.68.117:8555'
-export const feedUrl = `http://122.51.68.117:8555/`;
-export const wsUrl = `ws://122.51.68.117:8555/`
+export const baseUrl = `http://175.178.249.117/yzkc/`;
+export const apiUrl = 'http://175.178.249.117/yzkc'
+export const feedUrl = `http://175.178.249.117/yzkc/`;
+export const wsUrl = `ws://175.178.249.117/yzkc/`
 // var url = window.location;
 // export const baseUrl = `${url.origin}/`;
 // export const wsUrl = `wss://${url.hostname}/`

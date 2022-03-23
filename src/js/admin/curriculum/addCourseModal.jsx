@@ -1,6 +1,6 @@
 import React from 'react';
 import { message, Drawer, Button, Input, Modal, ConfigProvider, Icon, Select, Popconfirm, Radio, Row, Col, Tabs, Upload, Form } from 'antd';
-const apiUrl = 'http://122.51.68.117:8555'
+const apiUrl = 'http://175.178.249.117/yzkc'
 
 class My extends React.Component {
   constructor(props) {

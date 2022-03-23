@@ -1,5 +1,5 @@
 import apirequest from "./config/apirequest";
-const apiUrl = 'http://122.51.68.117:8555'
+const apiUrl = 'http://175.178.249.117/yzkc'
 const token = localStorage.getItem('userToken');
 
 export const selectPage = (parms) => {
