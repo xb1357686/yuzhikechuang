@@ -2,7 +2,8 @@ import React from 'react';
 import { Form } from 'antd';
 import {
   Route,
-  Switch
+  Switch,
+  Redirect,
 } from 'react-router-dom';
 
 import Nav from './nav';
@@ -53,7 +54,10 @@ class Layout extends React.Component {
       <React.Fragment>
         <Nav {...this.props} UserInfo={this.state.userInfo} />
         <Switch>
-          <Route exact path="/" component={HomePage} />
+          {/* <Route exact path="/"  component={HomePage} > */}
+          <Route exact path="/" >
+            <Redirect to="/courses" />
+          </Route>
           <Route exact path="/courses" component={Courses} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/apptools" component={apptools} />

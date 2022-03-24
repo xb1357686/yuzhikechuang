@@ -363,6 +363,18 @@ export const putCourse = (parms) => {
   })
 }
 
+// 删除课程
+export const deleteCourse = (parms) => {
+  return apirequest({
+    method: 'DELETE',
+    data: parms,
+    url: `${apiUrl}/course`,
+    headers: {
+      Authorization: token,
+    },
+  })
+}
+
 
 // 获取工具详情
 export const getWork = (parms) => {

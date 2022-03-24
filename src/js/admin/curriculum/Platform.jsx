@@ -20,7 +20,7 @@ import {
   courseSelectPage,
   addCourse,
   putCourse,
-  deleteStudent,
+  deleteCourse,
   classifysElectPage,
   getClass,
 } from "../../z_xu_api";
@@ -79,6 +79,7 @@ class Platform extends React.Component {
       current: 1,
       total: 0,
       selectedRowKeys: [],
+      selectedRow:[],
       editId: null,
       editPassWord: null,
       classify: [],
@@ -101,7 +102,7 @@ class Platform extends React.Component {
     courseSelectPage(obj).then((res) => {
       if (res && res.data && res.status === 200) {
         res.data.rows.map((res) => {
-          res.key = res.userId;
+          res.key = res.courseId;
         });
         this.setState({
           data: res.data.rows,
@@ -176,7 +177,11 @@ class Platform extends React.Component {
   // 批量删除
   allDelete = () => {
     const { selectedRowKeys } = this.state;
-    deleteStudent({ userIds: selectedRowKeys }).then((res) => {
+    // const list = selectedRow.map(res => {
+    //   res.courseStatus = 0;
+    //   return res;
+    // })
+    deleteCourse(selectedRowKeys).then((res) => {
       if (res && res.data.code === 200 && res.status === 200) {
         message.success("删除成功");
         this.selectPage();
@@ -184,9 +189,9 @@ class Platform extends React.Component {
     });
   };
 
-  onSelectChange = (selectedRowKeys) => {
-    console.log("selectedRowKeys changed: ", selectedRowKeys);
-    this.setState({ selectedRowKeys });
+  onSelectChange = (selectedRowKeys,selectedRow) => {
+    console.log("selectedRowKeys changed: ", selectedRowKeys,selectedRow);
+    this.setState({ selectedRowKeys,selectedRow });
   };
 
   onShowSizeChange = (current, size) => {
@@ -221,7 +226,7 @@ class Platform extends React.Component {
             courseDesc: values.courseDesc,
             courseRelationList: [...childrenList],
           };
-          putCourse(obj).then((res) => {
+          addCourse(obj).then((res) => {
             if (res && res.data.code === 200 && res.status === 200) {
               message.success("新增成功");
               this.okGetInfo();
@@ -398,6 +403,7 @@ class Platform extends React.Component {
       Columns,
       data,
       selectedRowKeys,
+      selectedRow,
       total,
       visible,
       editId,
@@ -414,6 +420,7 @@ class Platform extends React.Component {
     } = this.props;
     const rowSelection = {
       selectedRowKeys,
+      selectedRow,
       onChange: this.onSelectChange,
     };
     const pagination = {
@@ -502,7 +509,7 @@ class Platform extends React.Component {
               {" "}
               +添加课程{" "}
             </Button>
-            {/* <Button style={{ margin: '2px 10px' }} disabled={selectedRowKeys.length === 0} type="primary" onClick={this.allDelete} >  批量删除 </Button> */}
+            <Button style={{ margin: '2px 10px' }} disabled={selectedRowKeys.length === 0} type="primary" onClick={this.allDelete} >  批量删除 </Button>
           </div>
           <Table
             bordered

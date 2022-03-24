@@ -111,7 +111,7 @@ class Product extends React.Component {
     workSelectPage(obj).then((res) => {
       if (res && res.data && res.status === 200) {
         res.data.rows.map((res) => {
-          res.key = res.videoId;
+          res.key = res.workId;
         });
         this.setState({
           data: res.data.rows,
@@ -223,11 +223,11 @@ class Product extends React.Component {
   parameter = () => {
     const { current, size } = this.state;
     const { form } = this.props;
-    const values = form.getFieldsValue(["workTitle"]);
+    const values = form.getFieldsValue(["workTitleSearch"]);
     const obj = {
       current,
       size,
-      workTitle: values.workTitle || null,
+      workTitle: values.workTitleSearch || null,
     }; // 默认列表字段数据
     return obj;
   };
@@ -382,7 +382,7 @@ class Product extends React.Component {
         <Form layout="inline">
           <div style={{ marginBottom: "20px" }}>
             <Form.Item {...ItemLayout} label="作品名称">
-              {getFieldDecorator("workTitle", {
+              {getFieldDecorator("workTitleSearch", {
                 // initialValue: '',
               })(
                 <Input
