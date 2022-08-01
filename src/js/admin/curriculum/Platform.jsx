@@ -181,7 +181,7 @@ class Platform extends React.Component {
     //   res.courseStatus = 0;
     //   return res;
     // })
-    deleteCourse(selectedRowKeys).then((res) => {
+    deleteCourse({"courseIds":selectedRowKeys}).then((res) => {
       if (res && res.data.code === 200 && res.status === 200) {
         message.success("删除成功");
         this.selectPage();
